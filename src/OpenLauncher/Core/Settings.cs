@@ -69,7 +69,7 @@ namespace OpenLauncher.Core
 
         // ---------- 常用项 ----------
         public static SourceMode GameSource { get => (SourceMode)GetInt("download.gameSource", 0); set => Set("download.gameSource", (int)value); }
-        public static SourceMode ModSource { get => (SourceMode)GetInt("download.modSource", 0); set => Set("download.modSource", (int)value); }
+        public static SourceMode ModSource { get => (SourceMode)GetInt("download.modSource", 0); set => Set("download.modSource", value); }
         public static int DownloadThreads { get => Math.Max(1, Math.Min(128, GetInt("download.threads", 32))); set => Set("download.threads", value); }
         public static int SpeedLimitKb { get => GetInt("download.speedLimitKb", 0); set => Set("download.speedLimitKb", value); }
         /// <summary>modrinth / curseforge</summary>
@@ -94,6 +94,8 @@ namespace OpenLauncher.Core
 
         public static string ThemeColor { get => Get("ui.theme", "#2F7BF5"); set => Set("ui.theme", value); }
         public static string BackgroundImage { get => Get("ui.background"); set => Set("ui.background", value); }
+        /// <summary>界面语言：zh-CN / zh-HK / en / de / fr / ja；空则启动时按系统语言推断</summary>
+        public static string UiLanguage { get => Get("ui.language"); set => Set("ui.language", value); }
 
         public static bool AutoCheckUpdate { get => GetBool("update.auto", true); set => Set("update.auto", value); }
 

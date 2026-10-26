@@ -17,6 +17,8 @@ namespace OpenLauncher.UI.Pages
             NavGame.IsChecked = true;
         }
 
+        public void ApplyLanguage() { }
+
         public void OnShown()
         {
             (Host.Content as IPage)?.OnShown();

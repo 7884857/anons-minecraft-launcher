@@ -38,6 +38,12 @@
   <ItemGroup>
     <Resource Include="Assets\icon.png" />
     <EmbeddedResource Include="Assets\zh-names.json" LogicalName="zh-names.json" />
+    <EmbeddedResource Include="Assets\lang\zh-CN.json" LogicalName="lang.zh-CN.json" />
+    <EmbeddedResource Include="Assets\lang\zh-HK.json" LogicalName="lang.zh-HK.json" />
+    <EmbeddedResource Include="Assets\lang\en.json" LogicalName="lang.en.json" />
+    <EmbeddedResource Include="Assets\lang\de.json" LogicalName="lang.de.json" />
+    <EmbeddedResource Include="Assets\lang\fr.json" LogicalName="lang.fr.json" />
+    <EmbeddedResource Include="Assets\lang\ja.json" LogicalName="lang.ja.json" />
   </ItemGroup>
 
 </Project>

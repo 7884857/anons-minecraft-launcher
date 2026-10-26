@@ -11,8 +11,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
     <Version>0.1.0</Version>
-    <Product>anon's Minecraft launcher</Product>
-    <Description>anon's Minecraft launcher — based on OpenLauncher by 有问题的红河</Description>
+    <Product>asml</Product>
+    <Description>asml — based on OpenLauncher by 有问题的红河</Description>
     <Copyright>OpenLauncher contributors, GPL-3.0</Copyright>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>embedded</DebugType>

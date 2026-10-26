@@ -29,6 +29,7 @@ namespace OpenLauncher
             Log.Info($"{Branding.AppName} {AppInfo.VersionString} 启动，系统 {Util.OsVersion} {Util.OsArch}，数据目录 {Paths.DataDir}");
             Updater.CleanupOld();
             Settings.Load();
+            Lang.Init();
             try { AccountStore.Load(); } catch (Exception ex) { Log.Error("读取账号失败", ex); }
             Theme.Apply(Settings.ThemeColor);
 #if DEBUG
@@ -50,7 +51,7 @@ namespace OpenLauncher
         {
             Log.Error("界面异常", e.Exception);
             e.Handled = true;
-            try { Dialogs.Alert("出错了", e.Exception.GetBaseException().Message + "\n\n详细信息已写入启动器日志。"); }
+            try { Dialogs.Alert(Lang.T("common.error"), e.Exception.GetBaseException().Message); }
             catch { MessageBox.Show(e.Exception.ToString(), Branding.AppName); }
         }
     }

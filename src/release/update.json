@@ -1,0 +1,16 @@
+{
+  "_comment": "发布时用 tools/Release 签名后替换。app 字段必须与 Branding.AppName 一致（asml）。",
+  "app": "asml",
+  "version": "0.1.0",
+  "notes": "占位清单：请用私钥签名后发布真实版本。",
+  "published": "2026-10-26",
+  "file": {
+    "name": "asml.exe",
+    "size": 0,
+    "sha256": "",
+    "urls": [
+      "https://github.com/7884857/anons-minecraft-launcher/releases/download/v0.1.0/asml.exe"
+    ]
+  },
+  "signature": ""
+}

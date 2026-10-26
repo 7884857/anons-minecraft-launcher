@@ -21,6 +21,12 @@ namespace OpenLauncher.UI.Pages
             AboutSub.Text = $"版本 {AppInfo.VersionString} · {Branding.Tagline} · 数据目录 {Paths.DataDir}";
         }
 
+        public void ApplyLanguage()
+        {
+            if (AboutTitle != null) AboutTitle.Text = Branding.DisplayName;
+            if (AboutSub != null) AboutSub.Text = $"v{AppInfo.VersionString} · {Lang.T("more.tagline")}";
+        }
+
         public void OnShown() { }
 
         void Repo_Click(object sender, RoutedEventArgs e) => Util.OpenUrl(Branding.RepoUrl);
